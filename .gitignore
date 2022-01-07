@@ -1,2 +1,4 @@
 
 *.xml
+__pycache__/tak.cpython-39-pytest-6.2.4.pyc
+.idea/testing.iml

@@ -1,4 +1,5 @@
 from string import punctuation
+from tkinter import font
 
 
 def joining(s):
@@ -39,7 +40,15 @@ class FormatText:
         points_terms = (len(self.string) > 10, self.string.istitle(), any(letter.isdigit() for letter in self.string),
                         any(sign in punctuation for sign in self.string))
         points_got = points_terms.count(True)
-        return answers[points_got]
+        return answers[points_got - 1]
+
+    def is_this_good_nickname(self):
+        answers = ('Terrible!', 'Bad', 'Good', 'Perfect!!')
+        points_terms = (" " not in self.string, len(self.string) < 30, any(letter.isupper() for letter in self.string),
+                        any(letter.isdigit() for letter in self.string))
+        points_got = points_terms.count(True)
+        return answers[points_got - 1]
+
 
 
 a = FormatText('testujemy to')
@@ -53,6 +62,7 @@ a = FormatText('testujemy to')
 # print(a.how_many_letters('t'))
 # print(a.change_chosen_letter_to_uppercase('e'))
 # print(a.is_this_good_password())
+# print(a.is_this_good_nickname())
 
 # -------------------------------------------------------------------
 
@@ -74,4 +84,4 @@ def score(dice):
     return game_score
 
 
-print(score([4, 4, 3, 5, 1]))
+# print(score([4, 4, 3, 5, 1]))
