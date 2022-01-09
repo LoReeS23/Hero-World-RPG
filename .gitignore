@@ -2,3 +2,5 @@
 *.xml
 __pycache__/tak.cpython-39-pytest-6.2.4.pyc
 .idea/testing.iml
+__pycache__/text_format.cpython-39.pyc
+__pycache__/number_formatting.cpython-39.pyc
