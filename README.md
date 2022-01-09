@@ -1,5 +1,9 @@
-# my_codings
+# About
 
-In this repository i just showing you how my code looks.
-I think it's not perfect but i trying my best.
-Hope you enjoy and maybe help me :P <3 
+Hi!
+I'm going to make a simple RPG game.
+Here u can make ur own hero and fight with multiple monsters.
+
+# What I wanna add?
+
+Monster fight
