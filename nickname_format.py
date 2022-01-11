@@ -1,6 +1,4 @@
-from string import punctuation
 import codecs
-from number_formatting import NumberFormat
 
 
 class NicknameFormatting:
